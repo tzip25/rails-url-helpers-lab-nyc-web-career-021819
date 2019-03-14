@@ -1,0 +1,5 @@
+<form action="<%=student_path%>" method="post">
+<label for="Active Status">Active Status:</label>
+<input type="checkbox" name="student[active]" value="<%=@student.active%>" <%="checked if @student.active == true"%> >
+<input type="submit" value="submit">
+</form>
